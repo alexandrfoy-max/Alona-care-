@@ -1,11 +1,10 @@
-html
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Alona Baby Care | Сервис нянь на Тенерифе</title>
-    <meta name="description" content="Alona Baby Care — премиальный сервис нянь на Тенерифе. Личная ответственность основателя, опытные няни, прозрачные условия. Оставьте заявку для знакомства.">
+    <title>Alona Baby Care | Профессиональные няни на Тенерифе</title>
+    <meta name="description" content="Alona Baby Care — лицензированный сервис нянь на Тенерифе. Полное официальное оформление, круглосуточная поддержка и забота о вашем ребёнке.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
@@ -31,7 +30,6 @@ html
             padding: 0 32px;
         }
 
-        /* Typography */
         h1, h2, h3, .logo, .nav-links a, .btn, .price-badge {
             font-family: 'Inter', sans-serif;
         }
@@ -62,7 +60,6 @@ html
             margin-bottom: 3rem;
         }
 
-        /* Buttons */
         .btn {
             display: inline-block;
             padding: 0.875rem 2rem;
@@ -99,7 +96,6 @@ html
             transform: translateY(-2px);
         }
 
-        /* Header */
         header {
             padding: 1.5rem 0;
             position: sticky;
@@ -148,7 +144,6 @@ html
             color: #2c5f6e;
         }
 
-        /* Hero */
         .hero {
             padding: 4rem 0 5rem;
             background-color: #fefaf5;
@@ -202,7 +197,6 @@ html
             color: #2c5f6e;
         }
 
-        /* Features */
         .features {
             padding: 5rem 0;
             background: white;
@@ -228,7 +222,6 @@ html
             margin-bottom: 1rem;
         }
 
-        /* About */
         .about {
             background: #fefaf5;
             padding: 5rem 0;
@@ -257,9 +250,32 @@ html
             display: block;
         }
 
-        /* Prices */
         .pricing {
             padding: 5rem 0;
+            background-color: #f7faf8;
+        }
+
+        .pricing-switch {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .pricing-switch button {
+            background: none;
+            border: none;
+            font-weight: 500;
+            cursor: pointer;
+            padding: 0.5rem 1.5rem;
+            border-radius: 40px;
+            background: #e9ecef;
+            transition: all 0.2s;
+        }
+
+        .pricing-switch button.active {
+            background: #2c5f6e;
+            color: white;
         }
 
         .pricing-grid {
@@ -320,14 +336,13 @@ html
             font-size: 0.9rem;
         }
 
-        /* FAQ */
         .faq {
-            background: #f9f9f9;
+            background: #ffffff;
             padding: 5rem 0;
         }
 
         .faq-item {
-            background: white;
+            background: #f9f9f9;
             border-radius: 20px;
             padding: 1.5rem;
             margin-bottom: 1rem;
@@ -340,18 +355,18 @@ html
             margin-bottom: 0.5rem;
         }
 
-        /* Contact Form */
         .contact {
             padding: 5rem 0;
-            background: #ffffff;
+            background: #fefaf5;
         }
 
         .form-card {
-            background: #fefaf5;
+            background: white;
             border-radius: 32px;
             padding: 2.5rem;
             max-width: 800px;
             margin: 0 auto;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.05);
         }
 
         .form-group {
@@ -424,32 +439,30 @@ html
 </header>
 
 <main>
-    <!-- Hero -->
     <section class="hero">
         <div class="container hero-grid">
             <div class="hero-content">
-                <div class="badge">Тенерифе | Экспат-сервис</div>
-                <h1>Alona Baby Care — <span class="serif">спокойные родители</span> на Тенерифе</h1>
-                <p style="font-size: 1.2rem; color: #4a4a4a; margin-bottom: 2rem;">Индивидуальный присмотр для детей от 1 года. Вы всегда знаете, кто заботится о вашем ребёнке. Один звонок — и всё устроено.</p>
+                <div class="badge">Тенерифе | Лицензированный сервис</div>
+                <h1>Alona Baby Care — <span class="serif">спокойствие родителей</span> на Тенерифе</h1>
+                <p style="font-size: 1.2rem; color: #4a4a4a; margin-bottom: 2rem;">Индивидуальный присмотр для детей от 1 года. Полное официальное оформление, договор и круглосуточная поддержка 24/7.</p>
                 <a href="#contact" class="btn btn-primary">Записаться на знакомство →</a>
                 <div class="stats">
                     <div class="stat-item"><h3>10+</h3><span>лет опыта</span></div>
-                    <div class="stat-item"><h3>100%</h3><span>гарантия спокойствия</span></div>
+                    <div class="stat-item"><h3>100%</h3><span>официально</span></div>
                 </div>
             </div>
             <div class="hero-image">
-                <!-- HERO IMAGE: женщина или няня с ребенком на пляже/в уютной атмосфере -->
-                <img src="https://images.pexels.com/photos/3961330/woman-holding-baby-while-sitting-on-beach-3961330.jpg" alt="Заботливая няня с малышом" loading="lazy" style="width:100%; height:auto; object-fit:cover;">
+                <!-- !!! ВАЖНО: Замените src на путь к вашей картинке !!! -->
+                <img src="images/alona-baby-care-1.png" alt="Заботливая няня с малышом">
             </div>
         </div>
     </section>
 
-    <!-- Features / почему нам доверяют -->
     <section class="features">
         <div class="container">
-            <h2 class="serif" style="text-align:center;">Почему доверяют Alona</h2>
+            <h2 class="serif" style="text-align:center;">Почему доверяют Alona Baby Care</h2>
             <div class="features-grid">
-                <div class="feature-card"><i class="fas fa-user-check"></i><h3>Единый контакт</h3><p>Вы общаетесь только с основателем Alona — никакой бюрократии.</p></div>
+                <div class="feature-card"><i class="fas fa-file-signature"></i><h3>Официальное оформление</h3><p>Договор, соцпакет и полная отчётность. Прозрачно и надёжно.</p></div>
                 <div class="feature-card"><i class="fas fa-heart"></i><h3>Постоянство няни</h3><p>Ребёнок привыкает к одному человеку — стабильность и доверие.</p></div>
                 <div class="feature-card"><i class="fas fa-camera"></i><h3>Фотоотчёты</h3><p>После каждого визита — фото и короткий отчёт о дне.</p></div>
                 <div class="feature-card"><i class="fas fa-clock"></i><h3>Гибкость</h3><p>От 2 часов до полного дня, включая вечерние и ночные смены.</p></div>
@@ -457,7 +470,6 @@ html
         </div>
     </section>
 
-    <!-- About Alona (основатель) -->
     <section id="about" class="about">
         <div class="container about-flex">
             <div class="about-text">
@@ -467,39 +479,75 @@ html
                 <p><strong>Если вам что-то не нравится — вы говорите мне. Я решаю вопрос немедленно.</strong></p>
             </div>
             <div class="about-image">
-                <!-- ФОТО ОСНОВАТЕЛЯ: дружелюбная женщина, улыбка, нейтральный фон / Тенерифе -->
-                <img src="https://images.pexels.com/photos/4502712/woman-in-white-top-holding-baby-4502712.jpg" alt="Alona — основатель сервиса" loading="lazy">
+                <!-- !!! ВАЖНО: Замените src на путь к вашей картинке !!! -->
+                <img src="images/alona-baby-care-2.png" alt="Alona — основатель сервиса">
             </div>
         </div>
     </section>
 
-    <!-- Цены и услуги (без учениц, чистая модель) -->
     <section id="pricing" class="pricing">
         <div class="container">
-            <div style="text-align:center;"><h2 class="serif">Прозрачные цены</h2><div class="section-subtitle" style="margin:0 auto 2rem auto;">Без скрытых комиссий. Гибкая система под ваш ритм жизни.</div></div>
-            <div class="pricing-grid">
-                <div class="price-card"><h3>Дневной присмотр</h3><div class="price">€22 <small>/ час</small></div><p>08:00–20:00</p><hr><ul class="service-list"><li><i class="fas fa-check-circle"></i> Игры, прогулка, кормление</li><li><i class="fas fa-check-circle"></i> Фотоотчёт после визита</li></ul></div>
-                <div class="price-card"><h3>Вечерний</h3><div class="price">€27 <small>/ час</small></div><p>20:00–00:00</p><hr><ul class="service-list"><li><i class="fas fa-check-circle"></i> Включая укладывание</li><li><i class="fas fa-check-circle"></i> Ритуалы перед сном</li></ul></div>
-                <div class="price-card"><h3>Ночной</h3><div class="price">€32 <small>/ час</small></div><p>00:00–08:00</p><hr><ul class="service-list"><li><i class="fas fa-check-circle"></i> Полный присмотр во сне</li><li><i class="fas fa-check-circle"></i> Спокойствие родителей</li></ul></div>
-                <div class="price-card"><h3>Постоянная няня</h3><div class="price">€19 <small>/ час</small></div><p>от 20 ч/нед</p><hr><ul class="service-list"><li><i class="fas fa-check-circle"></i> Фиксированное расписание</li><li><i class="fas fa-check-circle"></i> Один человек, которого знает ребёнок</li></ul></div>
+            <div style="text-align:center;">
+                <h2 class="serif">Прозрачные условия</h2>
+                <div class="section-subtitle" style="margin:0 auto 2rem auto;">Официальный договор. Без скрытых комиссий.</div>
             </div>
-            <p style="text-align:center; margin-top: 2rem; background: #F0F3F2; padding: 0.8rem; border-radius: 40px; max-width: 500px; margin-left: auto; margin-right: auto;">⭐ Экспресс-выход за 2 часа: +€5 к ставке</p>
+            <div class="pricing-grid">
+                <div class="price-card">
+                    <h3>Помощь по хозяйству</h3>
+                    <div class="price">Включено</div>
+                    <p style="font-size: 0.9rem;">в любой пакет</p>
+                    <hr>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check-circle"></i> Приготовление еды</li>
+                        <li><i class="fas fa-check-circle"></i> Уборка после игр</li>
+                        <li><i class="fas fa-check-circle"></i> Помощь с делами</li>
+                    </ul>
+                </div>
+                <div class="price-card">
+                    <h3>Посуточная няня</h3>
+                    <div class="price">от €22 <small>/ час</small></div>
+                    <p>08:00–20:00</p>
+                    <hr>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check-circle"></i> Игры, прогулка, кормление</li>
+                        <li><i class="fas fa-check-circle"></i> Фотоотчёт</li>
+                    </ul>
+                </div>
+                <div class="price-card">
+                    <h3>Вечерняя / Ночная</h3>
+                    <div class="price">от €27 <small>/ час</small></div>
+                    <p>после 20:00</p>
+                    <hr>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check-circle"></i> Ритуалы отхода ко сну</li>
+                        <li><i class="fas fa-check-circle"></i> Полный присмотр</li>
+                    </ul>
+                </div>
+                <div class="price-card">
+                    <h3>Постоянная няня</h3>
+                    <div class="price">от €19 <small>/ час</small></div>
+                    <p>от 20 ч/нед</p>
+                    <hr>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check-circle"></i> Фиксированное расписание</li>
+                        <li><i class="fas fa-check-circle"></i> Один человек, которого знает ребёнок</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- FAQ (мягко, без негативных триггеров) -->
     <section class="faq" id="faq">
         <div class="container">
             <h2 class="serif" style="text-align:center;">Часто спрашивают</h2>
             <div style="max-width: 800px; margin: 2rem auto 0;">
-                <div class="faq-item"><div class="faq-question">Как вы выбираете нянь?</div><p>Я лично провожу собеседование, проверяю опыт и всегда начинаю с тестового дня в моём присутствии. К работе допускаются только те, кто разделяет мои стандарты заботы.</p></div>
-                <div class="faq-item"><div class="faq-question">Будет ли приходить один и тот же человек?</div><p>Да. Я закрепляю за семьёй одну няню, если вы не попросите иначе. Ребёнок привыкает, родители спокойны.</p></div>
-                <div class="faq-item"><div class="faq-question">Что, если няня не сможет выйти в последний момент?</div><p>Такое случается крайне редко, но на этот случай я или другой проверенный сотрудник уже знает ваши правила и режим. Вы не заметите разницы.</p></div>
+                <div class="faq-item"><div class="faq-question">Каковы гарантии для нашей семьи?</div><p>Мы заключаем официальный договор, предоставляем соцпакет и няню с полной юридической ответственностью. Вас страхует компания, а не частное лицо.</p></div>
+                <div class="faq-item"><div class="faq-question">Будет ли приходить один и тот же человек?</div><p>Да, мы закрепляем за семьёй одну няню, если вы не попросите иначе. Ребёнок привыкает, родители спокойны.</p></div>
+                <div class="faq-item"><div class="faq-question">Что, если няня не сможет выйти в последний момент?</div><p>Такое случается крайне редко, но на этот случай компания оперативно предоставит равноценную замену, знакомую с вашими правилами.</p></div>
             </div>
         </div>
     </section>
 
-    <!-- Контактная форма / Заявка -->
     <section id="contact" class="contact">
         <div class="container">
             <div class="form-card">
@@ -536,4 +584,3 @@ html
 </script>
 </body>
 </html>
-```
